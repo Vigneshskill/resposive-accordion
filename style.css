@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #787777;
+}
+.question{
+    max-width: 530px;
+    width: 100%;
+    background: #969696;
+    margin: 0 15px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow:  0 0 4px rgba(0,0,0,0.2);
+}
+.question .questions-content{
+    margin: 10px 0;
+    border-radius: 4px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+}
+.questions-content:nth-child(2){
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.questions-content:nth-child(3){
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.questions-content:nth-child(4){
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.questions-content.open{
+    padding-bottom: 10px;
+}
+.questions-content header{
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s linear;
+}
+.questions-content.open header{
+    min-height: 35px;
+}
+.questions-content header .title{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+.questions-content header i{
+    font-size: 15px;
+    color: #333;
+}
+.questions-content .answer{
+    height: 0;
+    font-size: 12px;
+    color: #333;
+    font-weight: 400;
+    padding: 0 15px;
+    transition: all 0.2s linear;
+}
+.para {
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 600px;
+    font-weight: 900;
+  padding-left: 1.1rem;
+}
